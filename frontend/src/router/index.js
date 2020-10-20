@@ -217,14 +217,14 @@ let router = new Router({
                 requireAuth : false,
             }
         },
-        /*
+        
         {
             path: '/pages/register',
             name: 'register',
             meta: { layout: 'userpages' },
             component: () => import('../DemoPages/UserPages/Register.vue'),
         },
-        */
+        
         {
             path: '/pages/register-boxed',
             name: 'register-boxed',

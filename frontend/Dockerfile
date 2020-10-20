@@ -11,11 +11,17 @@ COPY ./package.json /home/frontend/package.json
 
 RUN  npm install @vue/cli -g && npm install @vue/cli-service -g && npm install @vue/cli-plugin-babel -g && npm install @vue/cli-plugin-eslint -g && npm install vue-cli-plugin-vuetify -g && npm install
 
-#RUN npm install @vue/cli -g
-#RUN npm install @vue/cli-service -g
-#RUN npm install @vue/cli-plugin-babel -g
-#RUN npm install @vue/cli-plugin-eslint -g
-#RUN npm install vue-cli-plugin-vuetify -g
+RUN npm install @vue/cli -g
+RUN npm install @vue/cli-service -g
+RUN npm install @vue/cli-plugin-babel -g
+RUN npm install @vue/cli-plugin-eslint -g
+RUN npm install vue-cli-plugin-vuetify -g
+RUN npm install axios 
+RUN npm install bootstrap-vue 
+RUN npm install material-design-icons-iconfont
+RUN npm install vuex 
+RUN npm install vuex-persistedstate
+
 
 
 COPY . /home/frontend

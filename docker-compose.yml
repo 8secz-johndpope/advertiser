@@ -29,7 +29,7 @@ services:
         build:
             context: ./frontend/
             dockerfile: Dockerfile
-        #command: bash -c "npm run serve"
+        command: bash -c "npm run serve"
         volumes:
             - ./frontend:/home/frontend/
         ports:
